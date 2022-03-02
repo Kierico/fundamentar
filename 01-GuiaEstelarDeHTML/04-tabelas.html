@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <!-- Tabela Básica -->
+    <h1><code>Tabela Básica:</code></h1>
+<pre>
+<code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;</code>Nome<code>&lt;&sol;th&gt;
+        &lt;th&gt;</code>Idade<code>&lt;&sol;th&gt;
+    &lt;&sol;tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;</code>Kiérico<code>&lt;&sol;td&gt;
+        &lt;td&gt;</code>37<code>&lt;&sol;td&gt;
+    &lt;&sol;tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;</code>Total&colon;<code>&lt;&sol;th&gt;
+        &lt;td&gt;</code>1 pessoa<code>&lt;&sol;td&gt;
+    &lt;&sol;tr&gt;
+&lt;&sol;table&gt;
+</code>
+</pre>
+
+    <caption><em>Pessoas e suas idades:</em></caption>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Kiérico</td>
+            <td>37</td>
+        </tr>
+        <tr>
+            <td>Hevelyne</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>Lucila</td>
+            <td>6</td>
+        </tr>
+    </table>    <!-- /Tabela Básica -->
+
+    <br>
+
+    <!-- Organizando Tabelas -->
+    <h1><code>Organizando Tabelas:</code></h1>
+<pre>
+<code>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;</code>Nome<code>&lt;&sol;th&gt;
+            &lt;th&gt;</code>Idade<code>&lt;&sol;th&gt;
+        &lt;&sol;tr&gt;
+    &lt;&sol;thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;</code>Kiéico<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>37<code>&lt;&sol;td&gt;
+        &lt;&sol;tr&gt;
+    &lt;&sol;tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;th&gt;</code>Total&colon;<code>&lt;&sol;th&gt;
+            &lt;td&gt;</code>1 pessoa<code>&lt;&sol;td&gt;
+        &lt;&sol;tr&gt;
+    &lt;&sol;tfoot&gt;
+&lt;&sol;table&gt;
+</code>
+</pre>
+
+    <caption><em>Pessoas e suas idades:</em></caption>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kiérico</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>Hevelyne</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Lucila</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total:</th>
+                <td>3 pessoas.</td>
+            </tr>
+        </tfoot>
+    </table>    <!-- /Organizando Tabelas -->
+
+    <br>
+
+    <!-- Tabela Complexa -->
+    <h1><code>Tabela Complexa:</code></h1>
+    <h2><code>&bull; THead complexa</code></h2>
+
+<pre>
+<code>
+&lt;table&gt;
+    &lt;caption&gt;</code>Produtos da Loja<code>&lt;&sol;caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th rowspan&equals;&quot;2&quot;&gt;</code><code>&lt;&sol;th&gt;
+            &lt;th colspan&equals;&quot;2&quot;&gt;</code>Kiérico<code>&lt;&sol;th&gt;
+            &lt;th colspan&equals;&quot;2&quot;&gt;</code>Hevelyne<code>&lt;&sol;th&gt;
+        &lt;&sol;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;</code>Produzidos<code>&lt;&sol;th&gt;
+            &lt;th&gt;</code>Vendidos<code>&lt;&sol;th&gt;
+            &lt;th&gt;</code>Produzidos<code>&lt;&sol;th&gt;
+            &lt;th&gt;</code>Vendidos<code>&lt;&sol;th&gt;
+        &lt;&sol;tr&gt;
+    &lt;&sol;thead&gt;
+&lt;&sol;table&gt;
+</code>
+</pre>
+
+    <table>
+        <caption><em>Produtos da Loja - Produzidos x Vendidos.</em></caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Kiérico</th>
+                <th colspan="2">Hevelyne</th>
+            </tr>
+            <tr>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+            </tr>
+        </thead>
+    </table>
+
+    <br>
+
+    <h2><code>&bull; TBody complexo</code></h2>
+
+<pre>
+<code>
+&lt;table&gt;
+    &lt;caption&gt;</code>Produtos da Loja<code>&lt;&sol;caption&gt;
+    &lt;thead&gt;
+    &lt;&sol;thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th&gt;</code>Vassouras<code>&lt;&sol;th&gt;
+            &lt;td&gt;</code>50<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>30<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>20<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>20<code>&lt;&sol;td&gt;
+        &lt;&sol;tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;</code>Baldes<code>&lt;&sol;th&gt;
+            &lt;td&gt;</code>10<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>10<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>30<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>25<code>&lt;&sol;td&gt;
+        &lt;&sol;tr&gt;
+    &lt;&sol;tbody&gt;
+&lt;&sol;table&gt;
+</code>
+</pre>
+
+    <table>
+        <caption><em>Produtos da Loja - Produzidos x Vendidos.</em></caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Kiérico</th>
+                <th colspan="2">Hevelyne</th>
+            </tr>
+            <tr>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>    <!-- /Tabela Complexa -->
+
+    <br>
+
+    <!-- Melhorando o aspecto com colgroup -->
+    <code><h1>Melhorando o aspecto com &lt;colgroup&gt;&colon;</h1></code>
+
+<pre>
+<code>
+&lt;table&gt;
+    &lt;caption&gt;</code>Produtos da Loja<code>&lt;&sol;caption&gt;
+    &lt;colgroup&gt;
+        &lt;col&gt;
+        &lt;col span&equals;&quot;2&quot; style&equals;&quot;background&hyphen;color&colon; blueviolet&semi;&quot;&gt;
+        &lt;col span&equals;&quot;2&quot; style&equals;&quot;background&hyphen;color&colon; palevioletred&semi;&quot;&gt;
+    &lt;&sol;colgroup&gt;
+    &lt;thead&gt;
+    &lt;&sol;thead&gt;
+    &lt;tbody&gt;
+    &lt;&sol;tbody&gt;
+&lt;&sol;table&gt;
+</code>
+</pre>
+
+    <table>
+        <caption><em>Produtos da Loja - Produzidos x Vendidos.</em></caption>
+
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: blueviolet;">
+            <col span="2" style="background-color: palevioletred;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Kiérico</th>
+                <th colspan="2">Hevelyne</th>
+            </tr>
+            <tr>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>    <!-- /Melhorando o aspecto com colgroup -->
+
+    <br>
+    <br>
+
+    <!-- Melhorando acessibilidade -->
+    <code><h1>Melhorando acessibilidade:</h1></code>
+
+<pre>
+<code>
+&lt;table&gt;
+    &lt;caption&gt;</code>Produtos da Loja<code>&lt;&sol;caption&gt;
+    &lt;colgroup&gt;
+        &lt;col&gt;
+        &lt;col span&equals;&quot;2&quot; style&equals;&quot;background&hyphen;color&colon; blueviolet&semi;&quot;&gt;
+        &lt;col span&equals;&quot;2&quot; style&equals;&quot;background&hyphen;color&colon; palevioletred&semi;&quot;&gt;
+    &lt;&sol;colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th rowspan&equals;&quot;2&quot;&gt;</code><code>&lt;&sol;th&gt;
+            &lt;th colspan&equals;&quot;2&quot; scope&equals;&quot;colgroup&quot;&gt;</code>Kiérico<code>&lt;&sol;th&gt;
+            &lt;th colspan&equals;&quot;2&quot; scope&equals;&quot;colgroup&quot&gt;</code>Hevelyne<code>&lt;&sol;th&gt;
+        &lt;&sol;tr&gt;
+        &lt;tr&gt;
+            &lt;th scope&equals;&quot;col&quot;&gt;</code>Produzidos<code>&lt;&sol;th&gt;
+            &lt;th scope&equals;&quot;col&quot;&gt;</code>Vendidos<code>&lt;&sol;th&gt;
+            &lt;th scope&equals;&quot;col&quot;&gt;</code>Produzidos<code>&lt;&sol;th&gt;
+            &lt;th scope&equals;&quot;col&quot;&gt;</code>Vendidos<code>&lt;&sol;th&gt;
+        &lt;&sol;tr&gt;
+    &lt;&sol;thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th scope&equals;&quot;row&quot;&gt;</code>Vassouras<code>&lt;&sol;th&gt;
+            &lt;td&gt;</code>50<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>30<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>20<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>20<code>&lt;&sol;td&gt;
+        &lt;&sol;tr&gt;
+        &lt;tr&gt;
+            &lt;th scope&equals;&quot;row&quot;&gt;</code>Baldes<code>&lt;&sol;th&gt;
+            &lt;td&gt;</code>10<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>10<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>30<code>&lt;&sol;td&gt;
+            &lt;td&gt;</code>25<code>&lt;&sol;td&gt;
+        &lt;&sol;tr&gt;
+    &lt;&sol;tbody&gt;
+&lt;&sol;table&gt;
+</code>
+</pre>
+
+    <table>
+        <caption><em>Produtos da Loja - Produzidos x Vendidos.</em></caption>
+
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: blueviolet;">
+            <col span="2" style="background-color: palevioletred;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Kiérico</th>
+                <th colspan="2" scope="colgroup">Hevelyne</th>
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th scope="row">Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>    <!-- /Melhorando acessibilidade -->
+
+    <br>
+    <br>
+    <br>
+
+    <code>
+        <h1>
+            &Kfr;&ifr;&efr;&rfr;&ifr;&cfr;&ofr;
+            <br>
+            &Kscr;&iscr;&escr;&rscr;&iscr;&cscr;&oscr;
+            <br>
+            &Kopf;&iopf;&eopf;&ropf;&iopf;&copf;&oopf;
+        </h1>
+    </code>
+
+</body>
+</html>
+
+<!--
+    <table>
+    
+    Prós
+    - Visualização de dados via linhas e colunas.
+    - Boa acessibilidade para leitura dos dados
+
+    Contras
+    - Pouco flexível
+    - Precisa de estilização para melhor visualização
+
+    Não usar
+    - Para criar seu layout
+-->
+
+<!--
+    Tabela complexa:
+
+    2 lojas
+        Quantos produtos foram produzidos, quantos vendidos e agrupado por nome dos produtos
+-->

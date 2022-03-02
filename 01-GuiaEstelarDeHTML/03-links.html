@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Links</title>
+</head>
+<body>
+    <h1><code>Utilizando a tag âncora:</code></h1>
+    <a href="https://kierico.github.io/" target="_blank" style="text-decoration: none;">Kiérico Github</a>
+
+    <ul>
+        <li><a href="https://kierico.github.io/" target="_blank">Github</a></li>
+        <li><a href="mailto:kiericograndao@gmail.com">Email</a></li>
+        <li><a href="tel:+5592984244692">Cellphone</a></li>
+    </ul>
+
+    <br>
+
+    <h1><code>Fragmentos:</code></h1>
+    <h2>Saiba mais</h2>
+    <ul>
+        <li><a href="#about">Sobre mim</a>;</li>
+        <li><a href="#history">História</a>;</li>
+        <li><a href="#works">Trabalhos</a>;</li>
+    </ul>
+    <h3 id="about">Sobre mim</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <h3 id="history">História</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <h3 id="works">Trabalhos</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <br>
+
+    <h1><code>Qualquer conteúdo dentro da tag &lt;a&gt;:</code></h1>
+    <a href="https://kierico.github.io/" title="Ir para Github do Kiérico.">
+        <h1>GitHub</h1>
+        <p>Segue lá.</p>
+        <img src="https://source.unsplash.com/random" alt="imagens unsplash random" style="object-fit: fill;">
+    </a>
+    
+    <br>
+
+    <h1><code>Caminhos e URLs:</code></h1>
+    <a href="02-trabalhando-com-elementos.html">02 - Trabalhando com Elementos.</a>
+    <pre>
+        <code>
+            &lt;a href="02-trabalhando-com-elementos.html"&gt; 02 - Trabalhando com Elementos.</a>
+        </code>
+    </pre>
+
+    <br>
+
+    <h1><code>Como navegar pelos diretórios:</code></h1>
+    <a href="subpasta/pagina-qualquer.html">Entrando em um diretório.</a><br>
+    <pre>
+        <code>
+            &lt;a href="subpasta/pagina-qualquer.html"&gt; Entrando em um diretório.</a>
+            &lt;a href="../03-links.html"&gt; Saindo de um diretório.</a>
+            &lt;a href="pagina-qualquer.html"&gt; Arquivo na mesma pasta ou no diretório raiz.</a>
+            &lt;a href="./pagina-qualquer.html"&gt; Arquivo no diretório raiz ou na mesma pasta.</a>
+        </code>
+    </pre>
+
+    <br>
+
+    <h1><code>Caminhos absolutos vs relativos:</code></h1>
+    <a href="github.com"> Ir para o GitHub.</a><br>
+    <a href="https://kierico.github.io/"> Ir para o GitHub do Kiérico.</a><br>
+    <pre>
+        <code>
+            &lt;a href="github.com"&gt; Relativo: ir para o GitHub.</a>
+            &lt;a href="https://kierico.github.io/"&gt; Absoluto: ir para o GitHub.</a>
+        </code>
+    </pre>
+
+</body>
+</html>
+
+<!--
+    Hyperlinks - Elemento Âncora: <a>
+    
+    + Anatomia
+
+    + Atributos:
+        - globais (title, class, id, ...)
+        - href
+            - para onde iremos, quando clicarmos no link?
+                - url completa
+                - fragmento
+                - email
+                - telefone
+                - e outros.
+        - download
+        - target
+            - _self (padrão)
+            - _blank
+-->
+
+<!--
+    Conteúdo dos hyperlinks:
+
+    - qualquer conteúdo
+        <a href="https://kierico.github.io/" title="Ir para Github do Kiérico.">
+            <h1>GitHub</h1>
+            <p>Segue lá.</p>
+            <img src="https://source.unsplash.com/random" alt="">
+        </a>
+-->
+
+<!--
+    URLs e Caminhos dos arquivos:
+
+    - Uniform Resource Locator
+        - https://kierico.github.io/
+        - Sequência de texto que define onde algo está localizado na Web
+    - URL usam caminhos para encontrar arquivos
+
+    - Caminhos dos arquivos
+        - Onde, no explorador de arquivos, um recurso está localizado
+-->
+
+<!--
+    Como navegar pelos caminhos?
+
+    - mesmo diretório
+    - entrando em diretórios
+    - saindo de diretórios
+    - diretório raiz (root ou pai)
+-->
+
+<!--
+    URLs absolutos versus relativos:
+
+    - Absolutos
+        - inclui protocolo e nome de domínio
+            - https://kierico.github.io/
+        - sempre apontará para o mesmo local, pois é absoluto
+    
+    - Relativos
+        - relativo à página aberta no momento
+        - apontará para lugares diferentes
+-->
