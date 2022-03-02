@@ -22,10 +22,20 @@
     <figcaption style="text-align: center;"></figcaption>
 </figure>
 
+<br>
+
+### Live Sample
+<figure>
+    <img src="../Assets\imgensDaAula08\live-sample.png" alt="">
+    <figcaption style="text-align: center;"><a href="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/font/_sample_.live_sample.html">Live Sample</a></figcaption>
+</figure>
+
+<br>
+
 <br><hr><br>
 
 ### Referência
-* [shorthand]()
+* [shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
 
 <br><hr><br>
 
