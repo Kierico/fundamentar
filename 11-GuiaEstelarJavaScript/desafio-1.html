@@ -1,0 +1,43 @@
+<!-- ## Transformar notas escolares
+
+Crie um algoritmo que transforme as notas do sistema numérico para sistema de notas em caracteres tipo A B C
+
+* de 90 para cima - A
+* entre 80 - 90   - B
+* entre 70 - 79   - C
+* entre 60 - 69   - D
+* menor que 60    - F -->
+
+<body>
+    <input type="text" class="input">
+
+    <script>
+        
+        const getNota = (nota) => {
+
+            let notaFinal;
+
+            if (nota >= 90) {
+                notaFinal = `A`;
+            } else if (nota >= 80) {
+                notaFinal = `B`;
+            } else if (nota >=70) {
+                notaFinal = `C`;
+            } else if (nota >= 60) {
+                notaFinal = `D`;
+            } else {
+                notaFinal = `F`;
+            }
+            return notaFinal;
+        }
+
+        let result = getNota(90);
+
+        let input = document.querySelector(".input");
+        input.style.border = "none";
+        input.style.color = "white";
+        input.style.backgroundColor = "black";
+        input.value = `${result}`
+
+    </script>
+</body>
