@@ -57,5 +57,52 @@
             console.log(`${category.books.length}`)
         }
 
+        function countAuthors() {
+            let authors = [];
+
+            for(let category of booksByCategory) {
+                for(book of category.books) {
+                    if(authors.indexOf(book.author) == -1) {
+                        authors.push(book.author)
+                    }
+                }
+            }
+
+            console.log(`Total de autores: ${authors.length}.`)
+        }
+
+        function booksOfAugustoCury() {
+            let books = [];
+            let author = "Augusto Cury"
+
+            for(let category of booksByCategory) {
+                for(book of category.books) {
+                    if(book.author === author) {
+                        books.push(book.title)
+                    }
+                }
+            }
+
+            console.log(`Books do ${author}: ${books.length}.\n ${books.join(";\n ")}.`)
+        }
+
+        function booksOfAuthor(author) {
+            let books = [];
+
+            for(let category of booksByCategory) {
+                for(book of category.books) {
+                    if(book.author === author) {
+                        books.push(book.title)
+                    }
+                }
+            }
+
+            console.log(`Books do ${author}:\n ${books.join("// ")}.`)
+        }
+
+        countAuthors();
+        booksOfAugustoCury();
+        booksOfAuthor("Robert T. Kiyosaki e Sharon L. Lechter");
+
     </script>
 </body>
