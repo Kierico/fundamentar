@@ -1,0 +1,50 @@
+<!-- 
+    Crie um layout com 2 colunas, uma ao lado da outra.
+    A coluna da esquerda deverá ter 25% de tamanho e a coluna da direita deverá ocupar todo o espaço que sobra.
+    Faça uma separação de 1rem entre os elementos.
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            height: 100vh;
+        }
+
+        aside, main {
+            background-color: lightslategray;
+            border: 1px solid black;
+        }
+
+        aside {
+            flex-basis: 25%;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <aside>Aside</aside>
+    <main>Main</main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!-- 
+    Crie o <header> de um site que contenha uma logo e um menu.
+    Um elemento deverá ficar ao lado do outro.
+    A logo que ficará na extrema esquerda e o menu ficará na extrema direita.
+    Os itens do menu ficarão um ao lado do outro, com um espaço de .8rem entre elas.
+    O último elemento do menu será um botão de contato e você poderá utilizar o seletor :last-child para estilizar.
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 4rem;
+            background-color: lightslategray;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: .8rem;
+            text-decoration: none;
+            align-items: center;
+        }
+
+        ul li:last-child {
+            background-color: black;
+            color: white;
+            padding: .8rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>TESTIMONIALS</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
