@@ -1,0 +1,2 @@
+## Comandos
+`npm init -y`
